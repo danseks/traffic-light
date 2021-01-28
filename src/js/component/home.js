@@ -5,19 +5,44 @@ import PropTypes from "prop-types";
 //
 
 export const Home = () => {
-	const [colorg, setColor] = useState("red");
-	const [colorgs, setColors] = useState("red");
-	//	let color2 = "green";
-	const clickAlert = () => {
-		if (colorg == "red") {
-		}
-		//setColor("black");
-	};
+	const [lightColor, setLightColor] = useState({
+		black: "off",
+		yellow: "off",
+		green: "off"
+	});
+
 	return (
 		<div className="text-center mt-5">
-			<Light color={colorg} click={() => clickAlert()} />
-			<Light color={colorg} click={() => clickAlert()} />
-			<Light color={colorg} click={() => clickAlert()} />
+			<Light
+				class={"btn circle " + lightColor.black}
+				click={() =>
+					setLightColor({
+						black: "red",
+						yellow: "off",
+						green: "off"
+					})
+				}
+			/>
+			<Light
+				class={"btn circle " + lightColor.yellow}
+				click={() =>
+					setLightColor({
+						black: "off",
+						yellow: "yellow",
+						green: "off"
+					})
+				}
+			/>
+			<Light
+				class={"btn circle " + lightColor.green}
+				click={() =>
+					setLightColor({
+						black: "off",
+						yellow: "off",
+						green: "green"
+					})
+				}
+			/>
 		</div>
 	);
 };
