@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Light } from "./light.jsx";
 import PropTypes from "prop-types";
-//create your first component
-//
 
 export const Home = () => {
 	const [lightColor, setLightColor] = useState({
@@ -12,9 +10,10 @@ export const Home = () => {
 	});
 
 	return (
-		<div className="text-center mt-5">
+		<div className="traffic-light text-center mt-5 bg-dark offset-5 col-2">
 			<Light
 				class={"btn circle " + lightColor.black}
+				className="red"
 				click={() =>
 					setLightColor({
 						black: "red",

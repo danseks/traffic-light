@@ -1,16 +1,10 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    background-image: url(https://thehappyjetlagger.com/wp-content/uploads/2017/04/Shibuya-Kreuzung-Tokio-3.jpg);
+    width: 100%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
 .circle {
     display: inline-block;
     padding: 0;
@@ -22,14 +16,13 @@
     color: black !important;
     text-align: center;
     white-space: nowrap;
-    vertical-align: baseline;
     border-radius:50px;
-    position: relative;
     top: -3px;
+    margin-right: 0.5rem;
 }
 
 .red{
-        background-color: #d73d33;
+    background-color: #d73d33;
 }
 
 .off{
@@ -40,10 +33,18 @@
     background-color: yellow;
 }
 
+
 .green{
     background-color: green;
 }
 
 .blackTest{
     background-color: black;
+}
+
+.traffic-light {
+    height: 5rem;
+    background: #3d3d3d;
+    border-radius: 10px;
+    border-color: #181818 2px;
 }
