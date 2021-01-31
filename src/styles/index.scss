@@ -2,27 +2,28 @@
 
 body{
     background-image: url(https://thehappyjetlagger.com/wp-content/uploads/2017/04/Shibuya-Kreuzung-Tokio-3.jpg);
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .circle {
     display: inline-block;
     padding: 0;
-    width: 50px;
-    height: 50px;    
-    line-height: 50px;
-    font-size: 12px;
+    width: 4rem;
+    height: 4rem;    
+    margin-left: 0.7rem;
+    margin-top: 0.4rem;
     font-weight: lighter !important;
     color: black !important;
-    text-align: center;
-    white-space: nowrap;
-    border-radius:50px;
-    top: -3px;
-    margin-right: 0.5rem;
+    border-radius:2rem;
 }
 
 .red{
-    background-color: #d73d33;
+    background-color: #FF0000;
+}
+
+.redOff{
+    background-color: #5B0303;
 }
 
 .off{
@@ -30,12 +31,20 @@ body{
 }
 
 .yellow{
-    background-color: yellow;
+    background-color: #F8FF00;
+}
+
+.yellowOff{
+    background-color: #767203;
 }
 
 
 .green{
-    background-color: green;
+    background-color: #11FF00;
+}
+
+.greenOff{
+    background-color: #035B05;
 }
 
 .blackTest{
@@ -45,6 +54,6 @@ body{
 .traffic-light {
     height: 5rem;
     background: #3d3d3d;
-    border-radius: 10px;
-    border-color: #181818 2px;
+    border-radius: 0.8rem;
+    border-color: #181818 0.2rem;
 }
